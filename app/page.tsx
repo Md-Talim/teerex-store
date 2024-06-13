@@ -1,5 +1,6 @@
 import ProductCard from "@/components/product-card";
 import data from "@/lib/data";
+import Sidebar from "@/components/sidebar";
 
 const getAllTShirts = () => {
   const results = data;
@@ -12,7 +13,8 @@ const Home = () => {
 
   return (
     <section className="m-8 grid grid-cols-[250px_1fr]">
-      <aside>Filters</aside>
+      <Sidebar />
+
       <main className="space-y-10">
         <h1 className="text-4xl uppercase font-semibold">All T-Shirts</h1>
 
